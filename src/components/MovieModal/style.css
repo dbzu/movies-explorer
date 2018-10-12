@@ -1,0 +1,14 @@
+.error {
+    color: red;
+    padding: 3px;
+}
+
+.warn {
+    color: orange;
+    padding: 3px;
+}
+
+.icon-space {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}

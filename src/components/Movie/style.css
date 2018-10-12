@@ -1,0 +1,67 @@
+small {
+    display: block;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+}
+
+.card-bottom {
+    display: block;
+    padding: 2px;
+    margin-top: 5px;
+}
+
+.poster-container {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.card {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 0;
+    box-shadow: 1px 1px 7px 0px #c5c5c5;
+    height: 90%;
+}
+
+.poster {
+    height: 400px;
+}
+
+.icon-space {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.card-body {
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.delete-btn {
+    float: right;
+    margin-right: 10px;
+}
+
+.edit-btn {
+    float:left;
+}
+
+.edit-btn, .delete-btn {
+    margin-top: 5px;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.edit-btn:focus {
+    outline:0;   
+}
+
+.poster-container:hover {
+    max-height: 100%;
+}
+
+.poster-container:hover + .card-body {
+    display: none;
+}
+

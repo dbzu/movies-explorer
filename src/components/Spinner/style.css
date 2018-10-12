@@ -1,0 +1,40 @@
+
+@keyframes spinner {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+         transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+}
+
+.spinner {
+    height: 70vh;
+    opacity: 1;
+    position: relative;
+    transition: opacity linear 0.1s;    
+}
+
+.spinner:before {
+    animation: 0.7s linear infinite spinner;
+
+    border: solid 3px #eee;
+    border-bottom-color: #343a40;
+    border-radius: 50%;
+
+    content: "";
+    height: 60px;
+    width: 60px;
+    
+    left: 50%;
+    opacity: inherit;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    transform-origin: center;
+    will-change: transform;
+}
+
+.spinner-container {
+    text-align: center;
+}
